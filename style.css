@@ -84,10 +84,10 @@ a:hover {
 /* LOGO ARRIBA A LA IZQUIERDA */
 
 .logo-img {
-    height: 90px;
-    width:auto; /* Tamaño del logo */
-    vertical-align: middle; /* Alinear el logo verticalmente */
-}
+    height: auto; /* Altura del logo */
+    max-width: 150px; /* Tamaño maximo del logo */
+    width:100%; /* Tamaño del logo */
+ }
 
 .logo-solo {
     display: flex; /* Para alinear el logo y el texto */
@@ -102,10 +102,11 @@ a:hover {
 /* Media query para moviles */
 @media (max-width: 600PX) {
     .logo-img {
-        height: 50px; /* Tamaño del logo en pantallas pequeñas */
+        max-width: 90px; /* Tamaño del logo en pantallas pequeñas */
     }
     h1 {
-        font-size: 28px; /* Titulo mas pequeño en pantallas pequeñas */
+        font-size: 24px; /* Titulo mas pequeño en pantallas pequeñas */
+        margin-top: 60px; /* Espacio entre el logo y el titulo */
     }
     p,
     section p,
