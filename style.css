@@ -102,10 +102,10 @@ a:hover {
 /* Media query para moviles */
 @media (max-width: 600PX) {
     .logo-img {
-        height: 30px; /* Tamaño del logo en pantallas pequeñas */
+        height: 50px; /* Tamaño del logo en pantallas pequeñas */
     }
     h1 {
-        font-size: 32px; /* Titulo mas pequeño en pantallas pequeñas */
+        font-size: 28px; /* Titulo mas pequeño en pantallas pequeñas */
     }
     p,
     section p,
