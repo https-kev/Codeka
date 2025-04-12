@@ -90,32 +90,35 @@ a:hover {
 }
 
 .logo-solo {
+    display: flex; /* Para alinear el logo y el texto */
+    align-items: center;
     position: absolute;
     top: 20px;
-    left: 20px;
-    font-size: 20px; /* Tamaño de la letra del logo */
-    color: #fff; /* Color blanco para el logo */
-    font-weight: bold; /* Negrita para el logo */
-    letter-spacing: 1px; /* Espacio entre las letras del logo */
+    left: 20px; /* Posicion del logo */
+    z-index: 1000; /* Para que el logo quede encima de los demas elementos */
+    gap: 10px; /* Espacio entre el logo y el texto */
 }
 
 /* Media query para moviles */
 @media (max-width: 600PX) {
+    .logo-img {
+        height: 30px; /* Tamaño del logo en pantallas pequeñas */
+    }
     h1 {
-        font-size: 36px; /* Titulo mas pequeño en pantallas pequeñas */
+        font-size: 32px; /* Titulo mas pequeño en pantallas pequeñas */
     }
     p,
     section p,
     section li {
-        font-size: 16px; /* Parrafo mas pequeño en pantallas pequeñas */
+        font-size: 15px; /* Parrafo mas pequeño en pantallas pequeñas */
     }
 
     section h2 {
-        font-size: 24px; /* Titulo de la seccion mas pequeño en pantallas pequeñas */
+        font-size: 22px; /* Titulo de la seccion mas pequeño en pantallas pequeñas */
     }
 
     body {
-        padding: 30px; /* menos espacio en pantallas mas peques*/
+        padding: 20px; /* menos espacio en pantallas mas peques*/
     }
 }
 
