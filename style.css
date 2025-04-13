@@ -81,6 +81,31 @@ a:hover {
     color: #aaa; /* Color gris claro para los enlaces al pasar el mouse */
 }
 
+/* Logo de redes sociales */
+
+.redes-sociales {
+    display: flex; /* Para alinear los iconos de las redes sociales */
+    justify-content: center; /* Centrar los iconos */
+    gap: 20px; /* Espacio entre los iconos */
+    margin-top: 20px; /* Espacio entre el contenido y las redes sociales */
+    margin: 20px 0;
+    font-size: 20px; /* Tamaño de los iconos */
+}
+
+.redes-sociales a {
+    text-decoration: none; /* Quitar el subrayado de los iconos */
+}
+
+.redes-sociales i {
+    transition: transform 0.3s; /* Transicion para el efecto de hover */
+}
+
+.rededs-sociales i:hover {
+    transform: scale(1.2); /* Aumentar el tamaño del icono al pasar el mouse */
+}
+
+
+
 /* LOGO ARRIBA A LA IZQUIERDA */
 
 .logo-img {
@@ -98,6 +123,8 @@ a:hover {
     z-index: 1000; /* Para que el logo quede encima de los demas elementos */
     gap: 10px; /* Espacio entre el logo y el texto */
 }
+
+
 
 /* Media query para moviles */
 @media (max-width: 600PX) {
