@@ -84,27 +84,32 @@ a:hover {
 /* Logo de redes sociales */
 
 .redes-sociales {
+    align-items: center; /* Para alinear los iconos de las redes sociales */
     display: flex; /* Para alinear los iconos de las redes sociales */
     justify-content: center; /* Centrar los iconos */
     gap: 20px; /* Espacio entre los iconos */
     margin-top: 20px; /* Espacio entre el contenido y las redes sociales */
-    margin: 20px 0;
+    margin: 20px;
+    flex-wrap: wrap; /* Para que los iconos se ajusten a la pantalla */
     font-size: 20px; /* Tamaño de los iconos */
 }
 
 .redes-sociales a {
     text-decoration: none; /* Quitar el subrayado de los iconos */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: inherit; /* Color de los iconos */
+    transition: color 0.3s; /* Transicion para el color de los iconos */
 }
 
 .redes-sociales i {
-    transition: transform 0.3s; /* Transicion para el efecto de hover */
+    font-size: 28px; /* Tamaño de los iconos */
 }
 
-.rededs-sociales i:hover {
-    transform: scale(1.2); /* Aumentar el tamaño del icono al pasar el mouse */
+.redes-sociales a:hover {
+    color: #919191; /* Color gris claro para los iconos al pasar el mouse */
 }
-
-
 
 /* LOGO ARRIBA A LA IZQUIERDA */
 
@@ -127,7 +132,25 @@ a:hover {
 
 
 /* Media query para moviles */
-@media (max-width: 600PX) {
+@media (max-width: 600px) {
+
+    .redes-sociales {
+        display: flex; /* Para alinear los iconos de las redes sociales */
+        justify-content: center; /* Centrar los iconos */
+        gap : 20px; /* Espacio entre los iconos */
+        margin-top: 20px; /* Espacio entre el contenido y las redes sociales */
+        flex-wrap: wrap; /* Para que los iconos se ajusten a la pantalla */
+    }
+
+    .redes-sociales i {
+        font-size: 28px; /* Tamaño de los iconos */
+        color: inherit; /* Color de los iconos */
+    }
+
+    .redes-sociales a {
+        text-decoration: none; /* Quitar el subrayado de los iconos */;
+    }
+
     .logo-img {
         max-width: 90px; /* Tamaño del logo en pantallas pequeñas */
     }
