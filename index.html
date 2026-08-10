@@ -1,85 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeKa</title>
+
+    <title>CodeKa | Desarrollo Web para tu Negocio</title>
+
+    <!-- Descripción para buscadores -->
+    <meta name="description"
+        content="CodeKa crea sitios web modernos y funcionales para pequeños negocios y emprendimientos. Impulsa tu negocio en la web.">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
     <link rel="icon" href="codekafavicon.jpg" type="image/png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- LOGO -->
-    <nav>
-        <div class="logo-solo">
-            <img src="codekaIMG.PNG" class="logo-img">
-        </div>
-        
-        
+    <!--Navegacion-->
 
-    <!-- ENCABEZADO -->
-    <header>
-        <h1>Bienvenido a CodeKa</h1>
-        <p>Impulsa tu negocio en la web</p>
+    <nav class="navbar">
+
+        <a href="#inicio" class="logo">
+            <img src="codekaIMG.PNG" alt="logo de CodeKa" </a>
+
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#sobre-mi">Sobre Mí</a>
+                <a href="#contacto">Contacto</a>
+
+
+            </div>
+
+    </nav>
+
+    <!--Sección de Inicio-->
+
+    <header id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-tag">DESARROLLO WEB</p>
+
+            <h1>Impulsa tu negocio
+                <span>en la web</span>
+            </h1>
+
+            <p class="hero-description">Creo sitios web modernos,
+                funcionales y adaptados a las necesidades de tu negocio.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#servicios" class="btn btn-primary">
+                    Ver Servicios
+                </a>
+
+                <a href="#contacto" class="btn btn-secondary">
+                    Contáctame
+                </a>
+
+            </div>
+
+        </div>
+
     </header>
 
-    <!-- SOBRE MI -->
-    <section id="Sobre mi">
-        <h2>Sobre mí</h2>
-        <p>Hola espero que te encuentres bien, mi nombre es Kevin y soy estudiante de Ingeniería en Sistemas, actualmente estoy empezando con este proyecto llamado 
-            <strong>CodeKa</strong>, el cual es mi primer proyecto profesional y espero lograr sacarle un gran provecho, este proyecto está enfocado en
-             ofrecer mis servicios y obtener experiencia en el desarrollo web
-        </p>
-    </section>
+    <!--Sección de Servicios-->
 
-    <!-- LO QUE OFREZCO -->
-    <section id="Servicios">
-        <h2>Servicios que ofrezco</h2>
-        <ul class="servicios-lista">
-            <li>Diseño y desarrollo de páginas web</li>
-            <li>Tu tienda en línea</li>
-            <li>Diseño de logotipos</li>
-            <li>Soporte y actualizaciones</li>
-            <li>Diseño responsivo y optimización para dispositivos móviles</li>
-            <li>Consulta si quieres saber más!</li>
-        </ul>
-    </section>
+    <section id="servicios" class="section services">
 
-    <!-- PROYECTOS -->
-    <section id="Proyectos">
-        <h2>Proyectos y experimentos</h2>
-        <p>Aunque este es mi primer proyecto profesional, he trabajado anteriormente en algunos ejercicios y
-            proyectos personales o escolares para aprender y mejorar mis habilidades en el desarrollo web. Proximamente
-        estaré agregando ejemplos de mis trabajos y colaboraciones</p>
-        </ul>
-    </section>
+        <div class="section-header">
 
+            <p class="section-tag">
+                ¿QUÉ PUEDO HACER POR TU NEGOCIO?</p>
 
-    <!-- CONTACTO -->
-    <section id="Contacto">
-        <h2>Contacto</h2>
-        <p>Si estás interesado en mis servicios, no dudes en contactarme a través de las siguientes plataformas:</p>
-        
-        <div class="redes-sociales">
-          <a href="https://wa.me/71982147" target="_blank">
-            <i class="fab fa-whatsapp" style="color: #25D366;"></i> WhatsApp
-          </a>
-          <a href="https://www.facebook.com/LilYoshiK" target="_blank">
-            <i class="fab fa-facebook" style="color: #1877F2"></i> Facebook
-          </a>
-          <a href="https://www.instagram.com/https__kev" target="_blank">
-            <i class="fab fa-instagram" style="color: #E1306C"></i> Instagram
-          </a>
+            <h2>Soluciones pensadas
+                <span>para tu negocio</span>
+            </h2>
+
+            <p>
+                No todos los negocios necesitan lo mismo.
+                Por eso desarrollo soluciones adaptadas a cada proyecto.
+            </p>
+
         </div>
-      </section>
-       
-        <!--  <li><a href="https://wa.me/71982147" target="_blank">WhatsApp</a></li>
-            <li><a href="https://www.facebook.com/LilYoshiK" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/https__kev" target="_blank">Instagram</a></li>      
-        </ul> -->
+
+
+        <div class="services-grid">
+
+            <!-- Servicio 1 -->
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <h3>Páginas web</h3>
+
+                <p>
+                    Sitios web profesionales para presentar tu negocio,
+                    servicios, información y formas de contacto.
+                </p>
+
+            </article>
+
+
+            <!-- Servicio 2 -->
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <h3>Sistemas de reservas</h3>
+
+                <p>
+                    Permite que tus clientes puedan solicitar citas
+                    y consultar tus horarios de forma sencilla.
+                </p>
+
+            </article>
+
+
+            <!-- Servicio 3 -->
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+                <h3>Tiendas en línea</h3>
+
+                <p>
+                    Presenta tus productos en Internet y facilita
+                    que tus clientes puedan realizar pedidos.
+                </p>
+
+            </article>
+
+
+            <!-- Servicio 4 -->
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <h3>Diseño responsive</h3>
+
+                <p>
+                    Tu sitio funcionará correctamente en celulares,
+                    tablets y computadoras.
+                </p>
+
+            </article>
+
+
+            <!-- Servicio 5 -->
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+
+                <h3>Diseño e identidad</h3>
+
+                <p>
+                    Diseños visuales que ayuden a que tu negocio
+                    tenga una imagen profesional en Internet.
+                </p>
+
+            </article>
+
+
+            <!-- Servicio 6 -->
+            <article class="service-card">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <h3>Mantenimiento</h3>
+
+                <p>
+                    Actualizaciones, cambios y soporte para mantener
+                    tu sitio funcionando correctamente.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
 
 
 
-</body> 
+
+
+
+</body>
+
 </html>
