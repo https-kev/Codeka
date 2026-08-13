@@ -652,16 +652,22 @@ section {
 
 .projects-grid {
 
-    display: grid;
+    display: flex;
 
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 
     gap: 25px;
+
+    align-items: center;
 }
 
 
 .project-card {
 
+    width: 100%;
+
+    max-width: 550px;
+    
     overflow: hidden;
 
     background-color: var(--color-fondo);
